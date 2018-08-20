@@ -1,1 +1,3 @@
 services:
+  node:
+    image: tugboatqa/node:10
