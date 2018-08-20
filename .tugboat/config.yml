@@ -7,9 +7,6 @@ services:
         - npm install --global gatsby-cli
         - gatsby new gatsby-site
         
-      build:
-        - cd "/gatsby-site" && gatsby build --verbose
-        
   nginx:
     image: tugboatqa/nginx:1
     default: true
