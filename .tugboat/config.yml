@@ -2,3 +2,7 @@ services:
   node:
     image: tugboatqa/node:10
     default: true
+    
+    commands:
+      init:
+        - npm install --global gatsby-cli
