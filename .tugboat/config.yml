@@ -1,13 +1,12 @@
 services:
   node:
     image: tugboatqa/node:10
+    default: true
     
     commands:
       init:
         - npm install --global gatsby-cli
         - gatsby new gatsby-site
         
-  nginx:
-    image: tugboatqa/nginx:1
-    default: true
-    depends: node
+      build:
+        - cd "${TUGBOAT_ROOT}/gatsby-site/" && gatsby build --verbose
