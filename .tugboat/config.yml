@@ -7,4 +7,4 @@ services:
       init:
         - npm install --global gatsby-cli
         - gatsby new gatsby-site
-        - ln -snf "${TUGBOAT_ROOT}/gatsby-site" "${DOCROOT}"
+
