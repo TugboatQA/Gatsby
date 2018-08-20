@@ -9,6 +9,7 @@ services:
         - curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
         # Install Node.js
         - apt-get install -y nodejs
+        - npm install npm --global
         
         - npm install --global gatsby-cli
         - gatsby new gatsby-site
