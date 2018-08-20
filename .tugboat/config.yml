@@ -9,5 +9,5 @@ services:
         - gatsby new gatsby-site
         
       build:
-        - gatsby build --verbose
+        - cd "${TUGBOAT_ROOT}/gatsby-site/" && gatsby build --verbose
 
