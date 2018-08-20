@@ -15,5 +15,5 @@ services:
         - gatsby new gatsby-site
         
       build: 
-        - cd gatsby-site/ && gatsby build --verbose
+        - cd "${TUGBOAT_ROOT}/gatsby-site/" && gatsby build --verbose
  
