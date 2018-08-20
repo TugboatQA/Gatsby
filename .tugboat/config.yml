@@ -1,16 +1,18 @@
 services:
-  node:
-    image: tugboatqa/node:10
+  nginx:
+    image: tugboatqa/nginx:1
+    default: true
     
     commands:
       init:
+        # Adding the NodeSource APT repository AND the PGP key for verifying packages
+        - curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+        # Install Node.js
+        - apt-get install -y nodejs
+        
         - npm install --global gatsby-cli
         - gatsby new gatsby-site
         
       build: 
         - cd gatsby-site/ && gatsby build --verbose
-        
-  nginx:
-    image: tugboatqa/nginx:1
-    default: true
-    depends: node
+ 
