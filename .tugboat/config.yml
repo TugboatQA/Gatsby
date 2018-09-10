@@ -16,3 +16,4 @@ services:
       build:
         - cd "${TUGBOAT_ROOT}/gatsby-site" && gatsby build --verbose
         - ln -snf "${TUGBOAT_ROOT}/gatsby-site/public" "${DOCROOT}"
+        - echo "Hello world"
