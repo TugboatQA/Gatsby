@@ -1,4 +1,4 @@
-# Tugboat Started Kit for Gatsby
+# Tugboat Starter Kit for Gatsby
 
 This is a [configuration file](https://github.com/TugboatQA/Gatsby/blob/master/.tugboat/config.yml) for spinning 
 up a new [Gatsby site](https://www.gatsbyjs.org) in Tugboat. 
