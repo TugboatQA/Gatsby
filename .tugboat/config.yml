@@ -12,7 +12,7 @@ services:
         - npm install npm --global
         
         - npm install --global gatsby-cli
-        - gatsby new gatsby-site
+        - gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-default#v2
         
       build: 
         - cd "${TUGBOAT_ROOT}/gatsby-site/" && gatsby build --verbose
