@@ -1,0 +1,7 @@
+services:
+
+  nginx:
+    image: tugboatqa/nginx:1
+    default: true
+
+      
