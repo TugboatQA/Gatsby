@@ -3,3 +3,12 @@ services:
   nginx:
     image: tugboatqa/nginx:1
     default: true
+    
+    commands:
+      init: 
+        - curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+        - sudo apt-get install -y nodejs
+        
+        - npm install --global gatsby-cli
+        - gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-default
+        
