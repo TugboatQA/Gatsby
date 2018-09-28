@@ -12,3 +12,6 @@ services:
         - npm install --global gatsby-cli
         - gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-default
         
+      build:
+        - cd gatsby-site && gatsby build --verbose
+        - ln -snf "${TUGBOAT_ROOT}/gatsby-site/public" "${DOCROOT}"
